@@ -3,8 +3,16 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+def home():
+    return render_template('home.html')
+
+@app.route('/<therapy>')
+def therapy_page(therapy):
+    return render_template(f'{therapy}.html')
+
+@app.route('/survey')
+def survey():
+    return render_template('survey.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():

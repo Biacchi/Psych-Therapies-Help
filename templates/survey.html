@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Recomendação de Terapia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Pesquisa de Recomendação de Terapia</h1>
+        <form method="post" action="/submit">
+            <div class="form-group">
+                <label for="anxiety">Ansiedade</label>
+                <input type="number" class="form-control" id="anxiety" name="anxiety" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="depression">Depressão</label>
+                <input type="number" class="form-control" id="depression" name="depression" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="stress">Estresse</label>
+                <input type="number" class="form-control" id="stress" name="stress" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="trauma">Trauma</label>
+                <input type="number" class="form-control" id="trauma" name="trauma" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="relationship">Problemas de Relacionamento</label>
+                <input type="number" class="form-control" id="relationship" name="relationship" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="self_esteem">Autoestima</label>
+                <input type="number" class="form-control" id="self_esteem" name="self_esteem" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="anger">Raiva</label>
+                <input type="number" class="form-control" id="anger" name="anger" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="mood_swings">Mudanças de Humor</label>
+                <input type="number" class="form-control" id="mood_swings" name="mood_swings" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="grief">Luto</label>
+                <input type="number" class="form-control" id="grief" name="grief" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="obsessions">Obssessões</label>
+                <input type="number" class="form-control" id="obsessions" name="obsessions" min="1" max="5" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <a href="/" class="btn btn-secondary mt-3">Voltar</a>
+    </div>
+</body>
+</html>
