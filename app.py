@@ -30,8 +30,9 @@ def submit():
         'DBT': 0,
         'ACT': 0,
         'Psychodynamic': 0,
-        'Interpersonal': 0,
-        'EMDR': 0,
+        'ABA': 0,
+        'Systemic': 0,
+        'Humanistic': 0,
         'MBCT': 0
     }
 
@@ -41,8 +42,9 @@ def submit():
         'DBT': ['stress', 'relationship', 'mood_swings', 'anger'],
         'ACT': ['trauma', 'self_esteem', 'grief'],
         'Psychodynamic': ['self_esteem', 'relationship'],
-        'Interpersonal': ['relationship', 'depression', 'grief'],
-        'EMDR': ['trauma'],
+        'ABA': ['obsessions', 'anger'],
+        'Systemic': ['relationship'],
+        'Humanistic': ['self_esteem', 'grief'],
         'MBCT': ['stress', 'anxiety', 'depression']
     }
 
@@ -53,7 +55,7 @@ def submit():
     # Determine the best therapy based on the highest score
     recommended_therapy = max(therapy_scores, key=therapy_scores.get)
 
-    return render_template('result.html', therapy=recommended_therapy)
+    return render_template('result.html', recommended_therapy=recommended_therapy)
 
 if __name__ == '__main__':
     app.run(debug=True)
