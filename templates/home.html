@@ -3,16 +3,104 @@
 {% block title %}Site de Terapias{% endblock %}
 
 {% block content %}
-<h1 class="mt-5">Bem-vindo ao Site de Terapias</h1>
-<p class="lead">Escolha uma abordagem terapêutica para saber mais.</p>
-<ul class="list-group">
-    <li class="list-group-item"><a href="/CBT">Terapia Cognitivo-Comportamental (TCC)</a></li>
-    <li class="list-group-item"><a href="/DBT">Terapia Comportamental Dialética (DBT)</a></li>
-    <li class="list-group-item"><a href="/ACT">Terapia de Aceitação e Compromisso (ACT)</a></li>
-    <li class="list-group-item"><a href="/Psychodynamic">Terapia Psicodinâmica</a></li>
-    <li class="list-group-item"><a href="/ABA">Análise do Comportamento Aplicada (ABA)</a></li>
-    <li class="list-group-item"><a href="/Systemic">Terapia Sistêmica</a></li>
-    <li class="list-group-item"><a href="/Humanistic">Terapia Humanista</a></li>
-    <li class="list-group-item"><a href="/MBCT">Terapia Cognitiva Baseada em Mindfulness (MBCT)</a></li>
-</ul>
+<div class="hero">
+    <h1 class="display-4">Bem-vindo ao Site de Terapias</h1>
+    <p class="lead">Conheça mais sobre as diferentes abordagens terapêuticas e faça uma escolha informada para sua saúde mental.</p>
+</div>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sobre Nós</h5>
+                    <p class="card-text">Nosso objetivo é fornecer informações detalhadas sobre diversas abordagens terapêuticas para ajudar você a fazer uma escolha informada sobre sua saúde mental. Explore as diferentes terapias, entenda como funcionam e descubra qual pode ser a mais adequada para você.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Faça o Teste</h5>
+                    <p class="card-text">Não sabe qual terapia é a melhor para você? Faça nosso teste de recomendação e descubra a abordagem mais adequada para suas necessidades.</p>
+                    <a href="/survey" class="btn btn-primary">Fazer o Teste</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mt-5">Abordagens Terapêuticas</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/CBT">Terapia Cognitivo-Comportamental (TCC)</a></h5>
+                    <p class="card-text">Uma abordagem focada em modificar padrões de pensamento e comportamento para melhorar a saúde mental.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/DBT">Terapia Comportamental Dialética (DBT)</a></h5>
+                    <p class="card-text">Uma abordagem que combina estratégias de aceitação e mudança para ajudar indivíduos a gerenciar emoções intensas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/ACT">Terapia de Aceitação e Compromisso (ACT)</a></h5>
+                    <p class="card-text">Uma abordagem que utiliza a aceitação e a atenção plena para lidar com pensamentos e emoções desconfortáveis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/Psychodynamic">Terapia Psicodinâmica</a></h5>
+                    <p class="card-text">Uma abordagem focada em revelar e entender os processos inconscientes que influenciam o comportamento.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/ABA">Análise do Comportamento Aplicada (ABA)</a></h5>
+                    <p class="card-text">Uma abordagem que utiliza técnicas de aprendizagem para melhorar comportamentos sociais significativos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/Systemic">Terapia Sistêmica</a></h5>
+                    <p class="card-text">Uma abordagem que foca nas interações e relações dentro de sistemas, como famílias e casais.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/Humanistic">Terapia Humanista</a></h5>
+                    <p class="card-text">Uma abordagem que enfatiza o potencial humano e a autorrealização.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/MBCT">Terapia Cognitiva Baseada em Mindfulness (MBCT)</a></h5>
+                    <p class="card-text">Uma abordagem que combina práticas de mindfulness com terapia cognitiva para prevenir recaídas de depressão.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
