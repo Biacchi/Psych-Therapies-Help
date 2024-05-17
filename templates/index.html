@@ -3,42 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Therapy Recommendation Quiz</title>
+    <title>Therapy Recommendation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Therapy Recommendation Quiz</h1>
-    <form action="/submit" method="post">
-        <p>How often do you feel anxious? (1-5)</p>
-        <input type="number" name="anxiety" min="1" max="5" required>
-
-        <p>How often do you feel depressed? (1-5)</p>
-        <input type="number" name="depression" min="1" max="5" required>
-
-        <p>How often do you feel stressed? (1-5)</p>
-        <input type="number" name="stress" min="1" max="5" required>
-
-        <p>How often do you experience trauma-related thoughts? (1-5)</p>
-        <input type="number" name="trauma" min="1" max="5" required>
-
-        <p>How often do you have difficulties in relationships? (1-5)</p>
-        <input type="number" name="relationship" min="1" max="5" required>
-
-        <p>How often do you struggle with self-esteem issues? (1-5)</p>
-        <input type="number" name="self_esteem" min="1" max="5" required>
-
-        <p>How often do you feel angry? (1-5)</p>
-        <input type="number" name="anger" min="1" max="5" required>
-
-        <p>How often do you experience mood swings? (1-5)</p>
-        <input type="number" name="mood_swings" min="1" max="5" required>
-
-        <p>How often do you feel grief? (1-5)</p>
-        <input type="number" name="grief" min="1" max="5" required>
-
-        <p>How often do you have obsessive thoughts? (1-5)</p>
-        <input type="number" name="obsessions" min="1" max="5" required>
-
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+        <h1 class="mt-5">Therapy Recommendation Survey</h1>
+        <form method="post" action="/submit">
+            <div class="form-group">
+                <label for="anxiety">Anxiety</label>
+                <input type="number" class="form-control" id="anxiety" name="anxiety" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="depression">Depression</label>
+                <input type="number" class="form-control" id="depression" name="depression" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="stress">Stress</label>
+                <input type="number" class="form-control" id="stress" name="stress" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="trauma">Trauma</label>
+                <input type="number" class="form-control" id="trauma" name="trauma" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="relationship">Relationship Issues</label>
+                <input type="number" class="form-control" id="relationship" name="relationship" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="self_esteem">Self-Esteem</label>
+                <input type="number" class="form-control" id="self_esteem" name="self_esteem" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="anger">Anger</label>
+                <input type="number" class="form-control" id="anger" name="anger" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="mood_swings">Mood Swings</label>
+                <input type="number" class="form-control" id="mood_swings" name="mood_swings" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="grief">Grief</label>
+                <input type="number" class="form-control" id="grief" name="grief" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="obsessions">Obsessions</label>
+                <input type="number" class="form-control" id="obsessions" name="obsessions" min="1" max="5" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

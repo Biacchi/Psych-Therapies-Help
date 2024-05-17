@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Therapy Recommendation Result</title>
+    <title>Recommended Therapy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Your Recommended Therapy</h1>
-    <p>Based on your responses, we recommend: <strong>{{ therapy }}</strong></p>
-    <a href="/">Take the quiz again</a>
+    <div class="container">
+        <h1 class="mt-5">Recommended Therapy</h1>
+        <p class="lead">Based on your responses, the recommended therapy is:</p>
+        <div class="alert alert-info" role="alert">
+            <strong>{{ therapy }}</strong>
+        </div>
+        <a href="/" class="btn btn-primary">Back to Survey</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
