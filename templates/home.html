@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Terapias</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-5">Bem-vindo ao Site de Terapias</h1>
-        <p class="lead">Escolha uma abordagem terapêutica para saber mais.</p>
-        <ul class="list-group">
-            <li class="list-group-item"><a href="/CBT">Terapia Cognitivo-Comportamental (TCC)</a></li>
-            <li class="list-group-item"><a href="/DBT">Terapia Comportamental Dialética (DBT)</a></li>
-            <li class="list-group-item"><a href="/ACT">Terapia de Aceitação e Compromisso (ACT)</a></li>
-            <li class="list-group-item"><a href="/Psychodynamic">Terapia Psicodinâmica</a></li>
-            <li class="list-group-item"><a href="/ABA">Análise do Comportamento Aplicada (ABA)</a></li>
-            <li class="list-group-item"><a href="/Systemic">Terapia Sistêmica</a></li>
-            <li class="list-group-item"><a href="/Humanistic">Terapia Humanista</a></li>
-            <li class="list-group-item"><a href="/MBCT">Terapia Cognitiva Baseada em Mindfulness (MBCT)</a></li>
-        </ul>
-        <a href="/survey" class="btn btn-primary mt-3">Fazer a Pesquisa de Recomendação</a>
-    </div>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Site de Terapias{% endblock %}
+
+{% block content %}
+<h1 class="mt-5">Bem-vindo ao Site de Terapias</h1>
+<p class="lead">Escolha uma abordagem terapêutica para saber mais.</p>
+<ul class="list-group">
+    <li class="list-group-item"><a href="/CBT">Terapia Cognitivo-Comportamental (TCC)</a></li>
+    <li class="list-group-item"><a href="/DBT">Terapia Comportamental Dialética (DBT)</a></li>
+    <li class="list-group-item"><a href="/ACT">Terapia de Aceitação e Compromisso (ACT)</a></li>
+    <li class="list-group-item"><a href="/Psychodynamic">Terapia Psicodinâmica</a></li>
+    <li class="list-group-item"><a href="/ABA">Análise do Comportamento Aplicada (ABA)</a></li>
+    <li class="list-group-item"><a href="/Systemic">Terapia Sistêmica</a></li>
+    <li class="list-group-item"><a href="/Humanistic">Terapia Humanista</a></li>
+    <li class="list-group-item"><a href="/MBCT">Terapia Cognitiva Baseada em Mindfulness (MBCT)</a></li>
+</ul>
+{% endblock %}
