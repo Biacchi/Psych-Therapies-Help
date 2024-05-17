@@ -1,19 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapy Recommendation Quiz</title>
+</head>
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Flask
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
-        </header>
-    </div>
-</body>
+    <h1>Therapy Recommendation Quiz</h1>
+    <form action="/submit" method="post">
+        <p>How often do you feel anxious? (1-5)</p>
+        <input type="number" name="anxiety" min="1" max="5" required>
 
+        <p>How often do you feel depressed? (1-5)</p>
+        <input type="number" name="depression" min="1" max="5" required>
+
+        <p>How often do you feel stressed? (1-5)</p>
+        <input type="number" name="stress" min="1" max="5" required>
+
+        <p>How often do you experience trauma-related thoughts? (1-5)</p>
+        <input type="number" name="trauma" min="1" max="5" required>
+
+        <p>How often do you have difficulties in relationships? (1-5)</p>
+        <input type="number" name="relationship" min="1" max="5" required>
+
+        <p>How often do you struggle with self-esteem issues? (1-5)</p>
+        <input type="number" name="self_esteem" min="1" max="5" required>
+
+        <p>How often do you feel angry? (1-5)</p>
+        <input type="number" name="anger" min="1" max="5" required>
+
+        <p>How often do you experience mood swings? (1-5)</p>
+        <input type="number" name="mood_swings" min="1" max="5" required>
+
+        <p>How often do you feel grief? (1-5)</p>
+        <input type="number" name="grief" min="1" max="5" required>
+
+        <p>How often do you have obsessive thoughts? (1-5)</p>
+        <input type="number" name="obsessions" min="1" max="5" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
 </html>
