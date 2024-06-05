@@ -3,7 +3,17 @@
 {% block title %}Pesquisa de Recomendação de Terapia{% endblock %}
 
 {% block content %}
-<h1 class="mt-5">Pesquisa de Recomendação de Terapia</h1>
+<h1 class="mt-5 mb-5">Pesquisa de Recomendação de Terapia</h1>
+
+<div class="alert alert-info" role="alert">
+    <h4 class="alert-heading">Orientações</h4>
+    <p>Por favor, preencha a pesquisa abaixo para que possamos ajudá-lo a descobrir qual terapia pode ser mais adequada para você. Responda honestamente a cada pergunta, classificando a intensidade de cada problema em uma escala de 1 a 5, onde 1 significa "muito pouco" e 5 significa "muito".</p>
+    <hr>
+</div>
+<div class="alert alert-danger" role="alert">
+    <p class="mb-0"><strong>Importante:</strong> Esta pesquisa é uma ferramenta auxiliar e as recomendações fornecidas não substituem a avaliação de um profissional de saúde mental. Para um diagnóstico e orientação adequados, consulte um terapeuta ou psicólogo qualificado.</p>
+</div>
+
 <form method="post" action="/submit">
     <div class="form-group">
         <label for="anxiety">Ansiedade</label>
